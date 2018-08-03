@@ -30,9 +30,9 @@ Account.authenticate()
 passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
 
-//api routes
+//api routes - add /api for nginx
 
-app.use('/v1', routes);
+app.use('/api/v1', routes);
 
 app.server.listen(config.port);
 
